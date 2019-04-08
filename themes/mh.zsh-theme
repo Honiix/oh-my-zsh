@@ -1,5 +1,6 @@
 # mh theme
 # preview: https://cl.ly/1y2x0W0E3t2C0F29043z
+# Honiix edit to add hostname
 
 # features:
 # path is autoshortened to ~30 characters
@@ -10,7 +11,7 @@
 if [ $UID -eq 0 ]; then NCOLOR="green"; else NCOLOR="white"; fi
 
 # prompt
-PROMPT='[%{$fg[$NCOLOR]%}%B%n%b%{$reset_color%}:%{$fg[red]%}%30<...<%~%<<%{$reset_color%}]%(!.#.$) '
+PROMPT='[%{$fg[$NCOLOR]%}%B%n%b%{$reset_color%}@%m:%{$fg[red]%}%30<...<%~%<<%{$reset_color%}]%(!.#.$) '
 RPROMPT='$(git_prompt_info)'
 
 # git theming
